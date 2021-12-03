@@ -6,6 +6,6 @@ def get_file_data(file_name, split_lines=True):
 
     with open(file_abs_path, 'r', encoding='UTF-8') as file:
         if split_lines:
-            return file.readlines()
+            return file.read().splitlines()
 
         return file.read()
