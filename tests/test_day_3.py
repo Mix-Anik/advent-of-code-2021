@@ -7,7 +7,7 @@ from days.day_3 import part_1, part_2
 LOG = logging.getLogger()
 
 
-class TestDay2Solutions:
+class TestDay3Solutions:
 
     def setup_class(self):
         self.test_day_3_data = get_file_data('input_day3_test')
