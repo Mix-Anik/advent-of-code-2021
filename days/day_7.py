@@ -2,7 +2,7 @@ def solution(data: str, const_inc: bool):
     crabs = [int(num) for num in data.split(',')]
     fuel_amounts = []
 
-    for num in set(crabs):
+    for num in range(min(crabs), max(crabs) + 1):
         fuel_spent = 0
 
         for crab_pos in crabs:
