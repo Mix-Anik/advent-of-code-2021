@@ -6,11 +6,8 @@ def solution(data: str, const_inc: bool):
         fuel_spent = 0
 
         for crab_pos in crabs:
-            if not const_inc:
-                diff = abs(crab_pos - num)
-                fuel_spent += int(diff * (diff + 1) / 2)
-            else:
-                fuel_spent += abs(crab_pos - num)
+            diff = abs(crab_pos - num)
+            fuel_spent += diff if const_inc else int(diff * (diff + 1) / 2)
 
         fuel_amounts.append(fuel_spent)
 
